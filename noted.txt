@@ -1,0 +1,35 @@
+day 4 
+belajar object 
+belajar array
+object didalam array
+array push untuk memasukkan array kedalam array kosong
+        node=blogs[i].technology.node
+        next=blogs[i].technology.next
+        reach=blogs[i].technology.reach
+        typeScript=blogs[i].technology.typeScript
+        if(node===true){
+            node=("node.png")
+            console.log(node)
+            let icon1=blogs[i]
+            document.getElementById(icon1).innerHTML += `
+            <img class="tech" src="./assets/icon/${node}"/>
+            `}
+        if(next===true){
+            next="next.png"
+            console.log(next)
+            document.getElementById("icon").innerHTML += `
+            <img class="tech" src="./assets/icon/${next}"/>
+            ` }
+        if(reach===true){
+            reach="reach.png"
+            console.log(reach)
+            document.getElementById("icon").innerHTML += `
+            <img class="tech" src="./assets/icon/${reach}"/>
+            `}
+        if(typeScript===true){
+            typeScript="typeScript.png"
+            console.log(typeScript)
+            document.getElementById("icon").innerHTML +=  ` 
+            <img class="tech" src="./assets/icon/${typeScript}"/>
+            `
+        }

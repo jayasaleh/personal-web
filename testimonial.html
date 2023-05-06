@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+</head>
+<body style="background-color: #FFFFFF;">
+    <nav>
+        <div class="nav-left">
+            <ul>
+                    <img src="./assets/logo/logo.png"/>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+                <li>
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="button-nav">
+            <a href="contact.html"><button>Contact Me</button></a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button onclick="openHumberger()" style="background-color: transparent; border: none; cursor: pointer;">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </button>
+          </div>
+    </nav>
+    <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="testimonial.html"  class="active">Testimonial</a>
+        <a href="contact.html"><button class="button">Contact Me</button></a>
+    </div>
+    <h1 class="center">Testimonial</h1>
+    <div class="rating center">
+        <h3>Rating by Star</h3>
+        <button class="rating-btn" onclick="showTestimonial()">
+            All
+        </button>
+        <button class="rating-btn" onclick="filterTestimonials(1)">
+            1 <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="rating-btn" onclick="filterTestimonials(2)">
+            2 <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="rating-btn" onclick="filterTestimonials(3)">
+            3 <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="rating-btn" onclick="filterTestimonials(4)">
+            4 <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="rating-btn" onclick="filterTestimonials(5)">
+            5 <i class="fa-solid fa-star"></i>
+        </button>
+    </div>
+    <div class="container-testi" id="testimonial">
+        
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/hamburger-menu.js"></script> 
+<script src="./assets/js/testimonial.js"></script>
+</html>

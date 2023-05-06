@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Detail</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo/logo.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/addProject">Add Project</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a href="/contact" class="btn text-white contact-me">
+                        Contact Me
+                    </a>
+                </form>
+          </div>
+        </div>
+      </nav>
+
+    
+<div class="detail-content">
+    <h1>{{.Blog.ProjectName}}</h1>
+    <div class="container-detail-project">
+        <div class="img-project-detail">
+            <img src="/assets/foto/nyanko.jpg">
+        </div>
+        <div class="detail-information">
+            <b>Durasi</b>
+            <p>{{.Blog.DurationProject}}</p>
+            <b><p>Technologies </p> </b>
+            {{range $index, $tech :=.Blog.Technologies}}
+            <img src="/assets/icon/{{$tech}}" alt="#" style="width:50px; height: 50px;"/>
+            {{end}}
+        </div>
+    </div>
+    <div style="margin-left: 50px; text-align:justify;">
+        <p style="font-size:15px;">Takashi Natsume dia adalah anak yatim piatu, sejak kecil Natsume memiliki kemampuan untuk melihat yokai, ayakashi dan hal semacamnya. Masa kecil Natsume begitu suram orang-orang yang berada di sekitarnya menganggapnya aneh dan menjauhinya tidak hanya itu di dunia yokai Natsume sering sekali dikejar untuk menjadi santapan yokai karena terlihat lezat dengan kekuatan supranaturalnya. Oleh karena itu Natsume sering berpindah-pindah rumah dan sekolahnya sesuai dengan saudara yang mengadopsinya.
+        Semua itu berubah ketika keluarga Fujuwara mengadopsinya, Fujiwara adalah orang baik dia menganggap Natsume seperti anaknya sendiri. Setelah beberapa lama selalu dikejar oleh yokai akhirnya Natsume menyadari bahwa yokai mengejar dirinya bukan hanya karena lezat tepai juga karena buku yang ada padanya "Yuujinchou". Buku yang didapatkan dari neneknya "Reiko Nastume", buku tersebut berisi nama-nama yokai yang dikalahkan oleh Reiko buku itu memiliki kekuatan untuk mengendalikan yokai yang namanya tertulis didalamnya.</p>
+    </div>
+</div>
+
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/hamburger-menu.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
